@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Góticos — Fan Site</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #050505;
+      color: #c8c8c8;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .page {
+      width: 960px;
+      max-width: 100%;
+      margin: 0 auto;
+      background: #0c0c0c;
+      border-left: 1px solid #2a2222;
+      border-right: 1px solid #2a2222;
+    }
+    .top-bar {
+      background: #0a0a0a;
+      border-bottom: 1px solid #2a2222;
+      padding: 5px 10px;
+      font-size: 12px;
+      color: #6a5a5a;
+      text-align: center;
+    }
+    .top-bar marquee { color: #7a6a6a; }
+    .header {
+      background: #080808;
+      border-bottom: 1px solid #2a2222;
+      padding: 14px 16px;
+      text-align: center;
+    }
+    .header h1 {
+      font-family: Georgia, serif;
+      font-size: 32px;
+      color: #d0d0d0;
+      letter-spacing: 3px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+    .header .sub { color: #6a5a5a; font-size: 12px; margin-top: 4px; }
+    .nav {
+      background: #0e0e0e;
+      border-bottom: 1px solid #2a2222;
+      padding: 6px;
+      text-align: center;
+    }
+    .nav a {
+      display: inline-block;
+      margin: 2px 3px;
+      padding: 5px 12px;
+      background: #141010;
+      color: #b0a8a8;
+      text-decoration: none;
+      border: 1px solid #2a2222;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .nav a:hover {
+      background: #1a1515;
+      color: #e0d8d8;
+      border-color: #3a2a2a;
+    }
+    .hits {
+      background: #080808;
+      border-bottom: 1px solid #1a1515;
+      text-align: center;
+      padding: 4px;
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      color: #5a4a4a;
+    }
+    .layout { display: table; width: 100%; table-layout: fixed; }
+    .col-left, .col-center, .col-right { display: table-cell; vertical-align: top; }
+    .col-left {
+      width: 170px;
+      background: #0a0a0a;
+      border-right: 1px solid #2a2222;
+      padding: 10px 8px;
+    }
+    .col-right {
+      width: 170px;
+      background: #0a0a0a;
+      border-left: 1px solid #2a2222;
+      padding: 10px 8px;
+    }
+    .col-center { padding: 12px 14px; background: #0c0c0c; }
+    .side-block {
+      margin-bottom: 14px;
+      border: 1px solid #2a2222;
+      background: #0e0e0e;
+    }
+    .side-block h3 {
+      background: #121010;
+      color: #9a8080;
+      font-size: 11px;
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 5px 7px;
+      border-bottom: 1px solid #2a2222;
+      font-family: Georgia, serif;
+    }
+    .side-block .inner { padding: 8px; }
+    .side-block a {
+      display: block;
+      color: #8a8080;
+      text-decoration: none;
+      font-size: 12px;
+      padding: 3px 0;
+      border-bottom: 1px solid #1a1515;
+    }
+    .side-block a:hover { color: #c8c0c0; }
+    .side-img {
+      width: 100%;
+      border: 1px solid #2a2222;
+      margin-bottom: 8px;
+      background: #101010;
+      overflow: hidden;
+    }
+    .side-img img {
+      width: 100%;
+      height: 90px;
+      object-fit: cover;
+      display: block;
+    }
+    .side-img .ph {
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4a3a3a;
+      font-size: 11px;
+      text-align: center;
+      padding: 6px;
+    }
+    .bat-bone {
+      text-align: center;
+      padding: 10px 6px 8px;
+      border: 1px solid #2a2222;
+      background: #0e0e0e;
+      margin-bottom: 12px;
+      overflow: visible;
+    }
+    .bat-bone img {
+      width: 148px;
+      height: 250px;
+      object-fit: contain;
+      object-position: center center;
+      display: block;
+      margin: 0 auto;
+      background: transparent;
+      filter: invert(1) brightness(0.92);
+    }
+    .bat-bone .bone {
+      font-size: 22px;
+      color: #6a5a5a;
+      margin: 6px 0 2px;
+    }
+    .bat-bone .label {
+      font-size: 10px;
+      color: #4a3a3a;
+      margin-top: 4px;
+      font-family: Georgia, serif;
+    }
+    .section {
+      margin-bottom: 18px;
+      border: 1px solid #2a2222;
+      background: #0e0e0e;
+      padding: 12px;
+    }
+    .section h2 {
+      font-family: Georgia, serif;
+      font-size: 18px;
+      color: #c0b8b8;
+      text-align: center;
+      background: #121010;
+      border: 1px solid #2a2222;
+      padding: 6px;
+      margin-bottom: 12px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .section h3 {
+      font-family: Georgia, serif;
+      color: #9a8080;
+      font-size: 14px;
+      margin: 10px 0 6px;
+      border-bottom: 1px solid #2a2222;
+      padding-bottom: 3px;
+      font-weight: normal;
+    }
+    .section p {
+      color: #a8a0a0;
+      margin-bottom: 8px;
+      text-align: justify;
+    }
+    .btn {
+      display: inline-block;
+      padding: 5px 12px;
+      background: #141010;
+      color: #b0a8a8;
+      border: 1px solid #2a2222;
+      font-family: Georgia, serif;
+      font-size: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 3px 2px;
+    }
+    .btn:hover {
+      background: #1a1515;
+      color: #e0d8d8;
+      border-color: #3a2a2a;
+    }
+    .style-btn {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 8px 10px;
+      margin-bottom: 6px;
+      background: #121010;
+      border: 1px solid #2a2222;
+      color: #b8b0b0;
+      font-family: Georgia, serif;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .style-btn:hover {
+      background: #1a1515;
+      border-color: #3a2a2a;
+      color: #e0d8d8;
+    }
+    .style-btn.active {
+      background: #1a1515;
+      border-color: #4a3a3a;
+      color: #d8d0d0;
+    }
+    .style-info {
+      display: none;
+      margin: 0 0 12px 0;
+      padding: 10px;
+      background: #101010;
+      border: 1px solid #2a2222;
+      color: #a8a0a0;
+      font-size: 13px;
+    }
+    .style-info.visible { display: block; }
+    .style-info h4 {
+      color: #c0b8b8;
+      margin-bottom: 6px;
+      font-weight: normal;
+      font-size: 14px;
+    }
+    .style-info ul { margin: 6px 0 0 18px; }
+    .style-info li { margin: 3px 0; }
+    .style-info-row {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+    .style-info-text {
+      display: table-cell;
+      vertical-align: top;
+      padding-right: 12px;
+      width: 48%;
+    }
+    .style-info-img {
+      display: table-cell;
+      vertical-align: top;
+      width: 52%;
+    }
+    .style-info-img .frame {
+      border: 1px solid #2a2222;
+      background: #0c0c0c;
+      overflow: hidden;
+      min-height: 380px;
+    }
+    .style-info-img img {
+      width: 100%;
+      height: 420px;
+      object-fit: contain;
+      object-position: center top;
+      display: block;
+      background: #0a0a0a;
+    }
+    .style-info-img .ph {
+      height: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #4a3a3a;
+      font-size: 11px;
+      text-align: center;
+      padding: 8px;
+    }
+    .style-info-img .cap {
+      font-size: 10px;
+      color: #6a5a5a;
+      text-align: center;
+      margin-top: 4px;
+    }
+    @media (max-width: 700px) {
+      .style-info-text, .style-info-img {
+        display: block;
+        width: 100%;
+        padding-right: 0;
+      }
+      .style-info-img { margin-top: 10px; }
+      .style-info-img img,
+      .style-info-img .ph {
+        height: 320px;
+      }
+      .style-info-img .frame {
+        min-height: 280px;
+      }
+    }
+    .timeline-item {
+      margin: 6px 0;
+      padding: 6px 10px;
+      border-left: 2px solid #3a2a2a;
+      cursor: pointer;
+      color: #a8a0a0;
+    }
+    .timeline-item:hover { background: #121010; }
+    .timeline-item strong { color: #9a8080; }
+    #time-info, #band-info {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #2a2222;
+      background: #101010;
+      color: #a8a0a0;
+    }
+    .band-info-row {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+    .band-info-text-col {
+      display: table-cell;
+      vertical-align: top;
+      width: 58%;
+      padding-right: 12px;
+    }
+    .band-info-audio-col {
+      display: table-cell;
+      vertical-align: top;
+      width: 42%;
+      padding: 10px 8px;
+      border: 1px solid #2a2222;
+      background: #0c0c0c;
+      text-align: center;
+    }
+    .vinyl-wrap {
+      display: inline-block;
+      position: relative;
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .vinyl {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at center, #1a1010 0 18%, #2a2020 18% 22%, #121212 22% 28%,
+          #1a1a1a 28% 32%, #0e0e0e 32% 38%, #1a1a1a 38% 42%, #0a0a0a 42% 100%);
+      box-shadow:
+        0 0 0 3px #2a2222,
+        0 0 0 5px #1a1515,
+        inset 0 0 20px rgba(0,0,0,0.8),
+        0 4px 12px rgba(0,0,0,0.6);
+      position: relative;
+      transition: transform 0.3s linear;
+    }
+    .vinyl.spinning {
+      animation: vinyl-spin 2.5s linear infinite;
+    }
+    @keyframes vinyl-spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .vinyl-label {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 52px;
+      height: 52px;
+      margin: -26px 0 0 -26px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #4a3030 0%, #2a1818 70%, #1a1010 100%);
+      border: 2px solid #3a2a2a;
+      overflow: hidden;
+      z-index: 2;
+      pointer-events: none;
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+    }
+    .vinyl-label img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 50%;
+    }
+    .vinyl-label .vl-fallback {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8px;
+      color: #a08080;
+      text-align: center;
+      line-height: 1.1;
+      padding: 4px;
+    }
+    .vinyl-spindle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      margin: -4px 0 0 -4px;
+      border-radius: 50%;
+      background: #0a0a0a;
+      border: 1px solid #5a4a4a;
+      z-index: 4;
+      pointer-events: none;
+    }
+    .vinyl-grooves {
+      position: absolute;
+      inset: 12px;
+      border-radius: 50%;
+      border: 1px solid rgba(80,70,70,0.25);
+      pointer-events: none;
+    }
+    .vinyl-grooves::before,
+    .vinyl-grooves::after {
+      content: '';
+      position: absolute;
+      inset: 10px;
+      border-radius: 50%;
+      border: 1px solid rgba(80,70,70,0.2);
+    }
+    .vinyl-grooves::after {
+      inset: 22px;
+    }
+    .vinyl-arm {
+      position: absolute;
+      top: 8px;
+      right: -2px;
+      width: 6px;
+      height: 55px;
+      background: linear-gradient(180deg, #6a5a5a, #3a3030);
+      border-radius: 3px;
+      transform-origin: top center;
+      transform: rotate(-25deg);
+      z-index: 3;
+      pointer-events: none;
+      transition: transform 0.4s ease;
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    .vinyl-wrap.playing .vinyl-arm {
+      transform: rotate(8deg);
+    }
+    .vinyl-play-hint {
+      font-size: 11px;
+      color: #8a7070;
+      margin-top: 2px;
+    }
+    #band-audio {
+      display: none !important;
+    }
+    @media (max-width: 700px) {
+      .band-info-text-col, .band-info-audio-col {
+        display: block;
+        width: 100%;
+        padding-right: 0;
+      }
+      .band-info-audio-col { margin-top: 10px; }
+    }
+    .outfit-box { display: table; width: 100%; margin-top: 10px; }
+    .outfit-col {
+      display: table-cell;
+      width: 50%;
+      vertical-align: top;
+      padding: 4px;
+    }
+    .items-list, .drop-zone {
+      border: 1px dashed #4a3a3a;
+      background: #0c0c0c;
+      min-height: 220px;
+      padding: 10px;
+    }
+    .drop-zone {
+      border-color: #5a4a4a;
+      background: #120e0e;
+      border-style: solid;
+    }
+    .drop-zone.drag-over {
+      background: #1a1515;
+      border-color: #8a7070;
+    }
+    .clothing-item {
+      background: #1a1515;
+      border: 1px solid #3a2a2a;
+      padding: 8px 10px;
+      margin: 5px 0;
+      cursor: pointer;
+      font-size: 13px;
+      color: #c8c0c0;
+      user-select: none;
+    }
+    .clothing-item:hover {
+      background: #2a2020;
+      border-color: #6a5a5a;
+      color: #fff;
+    }
+    .clothing-item.dragging { opacity: 0.5; }
+    
+    
+    .outfit-piece {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: #221818;
+      border: 1px solid #5a4a4a;
+      padding: 0;
+      margin: 8px 0;
+      cursor: pointer;
+      font-size: 12px;
+      color: #c8c0c0;
+      font-family: Georgia, serif;
+      overflow: hidden;
+    }
+    .outfit-piece:hover {
+      background: #2a1010;
+      border-color: #8a7070;
+      color: #fff;
+    }
+    .outfit-piece .op-img {
+      width: 100%;
+      height: 100px;
+      object-fit: contain;
+      display: block;
+      background: #101010;
+    }
+    .outfit-piece .op-ph {
+      width: 100%;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      background: #141010;
+      border-bottom: 1px solid #2a2222;
+    }
+    .outfit-piece .op-label {
+      padding: 6px 8px;
+      text-align: center;
+    }
+
+    .clothing-btn {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: #1a1515;
+      border: 1px solid #3a2a2a;
+      padding: 8px 10px;
+      margin: 5px 0;
+      cursor: pointer;
+      font-size: 13px;
+      color: #c8c0c0;
+      font-family: Georgia, serif;
+    }
+    .clothing-btn:hover {
+      background: #2a2020;
+      border-color: #6a5a5a;
+      color: #fff;
+    }
+    
+    
+
+    .drop-zone .clothing-item {
+      background: #221818;
+      border-color: #5a4a4a;
+    }
+    .gallery-grid { display: table; width: 100%; border-collapse: collapse; }
+    .gallery-grid .row { display: table-row; }
+    .gallery-grid .cell {
+      display: table-cell;
+      width: 33.33%;
+      padding: 4px;
+      vertical-align: top;
+    }
+    .gallery-item {
+      border: 1px solid #2a2222;
+      background: #101010;
+      cursor: pointer;
+      padding: 3px;
+    }
+    .gallery-item:hover { border-color: #4a3a3a; }
+    .gallery-item img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      display: block;
+    }
+    .gallery-item .ph {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4a3a3a;
+      font-size: 11px;
+    }
+    .gallery-item .cap {
+      display: none;
+    }
+    .style-info-img .cap {
+      display: none;
+    }
+    .band-card {
+      border: 1px solid #2a2222;
+      background: #101010;
+      padding: 8px;
+      margin-bottom: 6px;
+      cursor: pointer;
+      text-align: center;
+    }
+    .band-card:hover {
+      border-color: #3a2a2a;
+      background: #141010;
+    }
+    .band-card .year {
+      font-size: 10px;
+      color: #5a4a4a;
+      font-family: "Courier New", monospace;
+    }
+    .band-card h4 {
+      color: #c0b8b8;
+      font-size: 13px;
+      font-weight: normal;
+      margin: 3px 0;
+    }
+    .band-card p {
+      font-size: 11px;
+      color: #7a6a6a;
+      text-align: center;
+      margin: 0;
+    }
+    .band-row { display: table; width: 100%; }
+    .band-row .b {
+      display: table-cell;
+      width: 33.33%;
+      padding: 3px;
+      vertical-align: top;
+    }
+    .bg-banner {
+      background-size: cover;
+      background-position: center;
+      min-height: 90px;
+      border: 1px solid #2a2222;
+      margin: 12px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .bg-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+    }
+    .bg-banner .inner {
+      position: relative;
+      z-index: 1;
+      padding: 12px;
+    }
+    .bg-banner h3 {
+      color: #c0b8b8;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border: none;
+      margin: 0 0 4px;
+    }
+    .bg-banner p {
+      color: #7a6a6a;
+      font-size: 12px;
+      margin: 0;
+      text-align: center;
+    }
+    .api-box {
+      border: 1px dashed #2a2222;
+      background: #0c0c0c;
+      padding: 10px;
+      text-align: center;
+      margin-top: 10px;
+    }
+    #wiki-content {
+      display: none;
+      text-align: left;
+      margin-top: 10px;
+      padding: 10px;
+      background: #101010;
+      border: 1px solid #2a2222;
+    }
+    #wiki-content.visible { display: block; }
+    #wiki-content img {
+      max-width: 100px;
+      float: right;
+      margin: 0 0 6px 8px;
+      border: 1px solid #2a2222;
+    }
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.92);
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox-inner { text-align: center; max-width: 90%; }
+    .lightbox-inner img {
+      max-width: 95vw;
+      max-height: 88vh;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      border: 1px solid #3a2a2a;
+      background: #000;
+    }
+    .lightbox-close {
+      display: block;
+      margin: 0 auto 8px;
+      background: #141010;
+      color: #b0a8a8;
+      border: 1px solid #2a2222;
+      padding: 4px 16px;
+      font-family: Georgia, serif;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .lightbox-close:hover { background: #1a1515; }
+    .footer {
+      background: #080808;
+      border-top: 1px solid #2a2222;
+      text-align: center;
+      padding: 12px;
+      font-size: 11px;
+      color: #5a4a4a;
+    }
+    .footer .name {
+      color: #8a8080;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+    @media (max-width: 800px) {
+      .layout { display: block; }
+      .col-left, .col-right, .col-center {
+        display: block;
+        width: 100%;
+        border: none;
+      }
+      .col-left, .col-right { border-bottom: 1px solid #2a2222; }
+      .band-row .b, .gallery-grid .cell, .outfit-col {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <div class="top-bar">
+    <marquee behavior="scroll" direction="left" scrollamount="4">
+      Fan site de la subcultura gótica — Historia · Vestimenta · Música · Galería — Estilo web años 2000
+    </marquee>
+  </div>
+  <div class="header">
+    <h1>Los Góticos</h1>
+    <div class="sub">Fan site de la subcultura gótica</div>
+  </div>
+  <div class="nav">
+    <a href="#inicio">Inicio</a>
+    <a href="#historia">Historia</a>
+    <a href="#vestimenta">Vestimenta</a>
+    <a href="#outfit">Outfit</a>
+    <a href="#galeria">Galería</a>
+    <a href="#musica">Música</a>
+    <a href="#vivir">Vivir gótico</a>
+  </div>
+  <div class="hits">
+    Visitas: <span id="hit-count">0001337</span> &nbsp;|&nbsp; <span id="clock"></span>
+  </div>
+  <div class="layout">
+    <div class="col-left">
+      <div class="bat-bone">
+        <img src="data:image/jpeg;base64,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" alt="Murciélago">
+        <div class="bone">🦴</div>
+      </div>
+      <div class="side-block">
+        <h3>Navegación</h3>
+        <div class="inner">
+          <a href="#inicio">· Inicio</a>
+          <a href="#historia">· Historia</a>
+          <a href="#vestimenta">· Vestimenta</a>
+          <a href="#outfit">· Arma tu outfit</a>
+          <a href="#galeria">· Galería</a>
+          <a href="#musica">· Música</a>
+          <a href="#vivir">· Vivir gótico</a>
+        </div>
+      </div>
+      <div class="side-block">
+        <h3>Estilos góticos</h3>
+        <div class="inner">
+          <a href="#vestimenta" onclick="openStyle('trad'); return false;">· Trad Goth</a>
+          <a href="#vestimenta" onclick="openStyle('victorian'); return false;">· Victorian</a>
+          <a href="#vestimenta" onclick="openStyle('cyber'); return false;">· Cybergoth</a>
+          <a href="#vestimenta" onclick="openStyle('pastel'); return false;">· Pastel Goth</a>
+        </div>
+      </div>
+      <div class="side-block">
+        <h3>Imágenes</h3>
+        <div class="inner">
+          <div class="side-img side-img-click" data-full="images/g1.jpg" data-caption="" style="cursor:pointer;">
+            <img src="images/g1.jpg" alt="g1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="ph" style="display:none;"></div>
+          </div>
+          <div class="side-img side-img-click" data-full="images/g2.jpg" data-caption="" style="cursor:pointer;">
+            <img src="images/g2.jpg" alt="g2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="ph" style="display:none;"></div>
+          </div>
+          <div class="side-img side-img-click" data-full="images/g3.jpg" data-caption="" style="cursor:pointer;">
+            <img src="images/g3.jpg" alt="g3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="ph" style="display:none;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="bat-bone">
+        <img src="data:image/jpeg;base64,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" alt="Murciélago">
+        <div class="bone">🦴</div>
+      </div>
+    </div>
+    <div class="col-center">
+      <div class="section" id="inicio">
+        <h2>Bienvenido</h2>
+        <div class="bg-banner" style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.75)), url('images/g1.jpg');">
+          <div class="inner">
+            <h3>La subcultura gótica</h3>
+            <p>Historia · Vestimenta · Música · Cultura</p>
+          </div>
+        </div>
+        <p>Este sitio reúne información sobre la subcultura gótica: sus orígenes en el post-punk británico, los estilos de vestimenta y las bandas que dieron forma al movimiento. No se trata de un examen ni de reglas: es una expresión estética y cultural.</p>
+        <p style="text-align:center;">
+          <a href="#historia" class="btn">Historia</a>
+          <a href="#vestimenta" class="btn">Vestimenta</a>
+          <a href="#musica" class="btn">Música</a>
+        </p>
+      </div>
+      <div class="section" id="historia">
+        <h2>Historia</h2>
+        <p>La subcultura gótica surgió en el Reino Unido entre finales de los 70 y mediados de los 80, como evolución de la escena post-punk. Bandas como Bauhaus, Siouxsie and the Banshees, Joy Division y The Cure sentaron las bases. El club Batcave en Londres (1982) fue el punto de encuentro de los primeros góticos.</p>
+        <h3>Línea de tiempo — clic para más info</h3>
+        <div class="timeline-item" data-time="1979"><strong>1979</strong> — Bauhaus lanza "Bela Lugosi's Dead".</div>
+        <div class="timeline-item" data-time="1981"><strong>1981-82</strong> — The Cure: Pornography. Abre el Batcave.</div>
+        <div class="timeline-item" data-time="1985"><strong>Mediados 80s</strong> — Expansión: deathrock, darkwave.</div>
+        <div class="timeline-item" data-time="1990"><strong>1990s-hoy</strong> — Diversificación: metal, industrial, cybergoth…</div>
+        <div id="time-info">
+          <p id="time-info-text"></p>
+          <button type="button" class="btn" id="time-info-close">Cerrar</button>
+        </div>
+        <div class="api-box">
+          <p style="color:#7a6a6a; font-size:12px; margin-bottom:6px;">Información en vivo desde Wikipedia</p>
+          <button type="button" class="btn" id="load-wiki">Cargar resumen de Wikipedia</button>
+          <div id="wiki-loading" style="display:none; color:#7a6a6a; margin-top:6px;">Cargando...</div>
+          <div id="wiki-content">
+            <img id="wiki-thumb" src="" alt="" style="display:none;">
+            <h4 id="wiki-title" style="color:#9a8080; font-weight:normal;"></h4>
+            <p id="wiki-extract" style="color:#a8a0a0;"></p>
+            <p style="margin-top:6px;"><a id="wiki-link" href="#" target="_blank" style="color:#8a7070;">Artículo completo en Wikipedia »</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-banner" style="background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.8)), url('images/g2.jpg');">
+        <div class="inner">
+          <h3>Vestimenta</h3>
+          <p>Estética oscura, teatral y expresiva</p>
+        </div>
+      </div>
+      <div class="section" id="vestimenta">
+        <h2>Vestimenta</h2>
+        <p>La moda gótica usa el negro como base e incorpora influencias victorianas, medievales, punk y del cine de terror. No hay un solo look: hay varias ramas. <strong>Haz clic en cada botón</strong> para leer sobre esa rama y ver una imagen de ejemplo al lado.</p>
+        <p style="text-align:center; margin:10px 0;">
+          <a href="#outfit" class="btn">→ Ir a Arma tu outfit</a>
+        </p>
+        <button type="button" class="style-btn" data-style="trad" id="btn-trad">Trad Goth ›</button>
+        <div class="style-info" style="display:none;" id="info-trad">
+          <div class="style-info-row">
+            <div class="style-info-text">
+              <h4>Trad Goth (Traditional Goth)</h4>
+              <p>Es la rama “clásica”, ligada al rock gótico de los 80 y al Batcave. Se basa en ropa negra, influencias punk suavizadas con dramatismo y referencias al cine de terror y a la moda victoriana de luto.</p>
+              <ul>
+                <li>Ropa negra como base</li>
+                <li>Blusas con volantes y encajes</li>
+                <li>Faldas midi o tea-length</li>
+                <li>Medias de red o encaje</li>
+                <li>Botas Dr. Martens o winklepickers</li>
+                <li>Maquillaje pálido y delineador negro</li>
+                <li>Cabello teñido de negro, a veces peinado hacia arriba</li>
+              </ul>
+              <p style="margin-top:8px;">Figuras de referencia: Siouxsie Sioux, Robert Smith, Dave Vanian, Patricia Morrison.</p>
+            </div>
+            <div class="style-info-img">
+              <div class="frame">
+                <img src="images/trad.jpg" alt="Ejemplo Trad Goth" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="ph" style="display:none;">📷</div>
+              </div>
+              <div class="cap"></div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="style-btn" data-style="victorian" id="btn-victorian">Victorian / Romantgoth ›</button>
+        <div class="style-info" style="display:none;" id="info-victorian">
+          <div class="style-info-row">
+            <div class="style-info-text">
+              <h4>Victorian / Romantgoth</h4>
+              <p>Se inspira en la moda de luto victoriana, el romanticismo y la literatura gótica del siglo XIX. Es más elaborada, teatral y “de época”: corsés, terciopelo, capas y joyería simbólica.</p>
+              <ul>
+                <li>Corsés y corpiños</li>
+                <li>Terciopelo, seda y encajes elaborados</li>
+                <li>Vestidos largos de inspiración victoriana</li>
+                <li>Joyería de plata y motivos religiosos u ocultos</li>
+                <li>Capas, chales y guantes largos</li>
+              </ul>
+              <p style="margin-top:8px;">Enfatiza la elegancia melancólica y la estética de novela gótica o de terror clásico.</p>
+            </div>
+            <div class="style-info-img">
+              <div class="frame">
+                <img src="images/romantico.jpg" alt="Ejemplo Victorian Goth" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="ph" style="display:none;">📷</div>
+              </div>
+              <div class="cap"></div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="style-btn" data-style="cyber" id="btn-cyber">Cybergoth ›</button>
+        <div class="style-info" style="display:none;" id="info-cyber">
+          <div class="style-info-row">
+            <div class="style-info-text">
+              <h4>Cybergoth</h4>
+              <p>Nace a finales de los 90 mezclando gótico con la escena rave e industrial. Combina negro con neones, elementos futuristas y una imagen más “cyber” que victoriana.</p>
+              <ul>
+                <li>Negro + colores neón (rosa, verde, azul)</li>
+                <li>Pelo sintético, dreadfalls, extensiones</li>
+                <li>Goggles / gafas de seguridad</li>
+                <li>Ropa de PVC, mallas y materiales sintéticos</li>
+                <li>Máscaras de gas y detalles industriales</li>
+              </ul>
+              <p style="margin-top:8px;">Muy ligado a clubs de industrial, EBM y rave oscura.</p>
+            </div>
+            <div class="style-info-img">
+              <div class="frame">
+                <img src="images/cyber.jpg" alt="Ejemplo Cybergoth" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="ph" style="display:none;">📷</div>
+              </div>
+              <div class="cap"></div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="style-btn" data-style="pastel" id="btn-pastel">Pastel Goth ›</button>
+        <div class="style-info" style="display:none;" id="info-pastel">
+          <div class="style-info-row">
+            <div class="style-info-text">
+              <h4>Pastel Goth</h4>
+              <p>Rama más reciente que mezcla la oscuridad gótica con colores pastel (rosa, lila, menta, lavanda). Contrasta lo “cute” con lo siniestro: ositos, lazos y tonos suaves junto a calaveras, cruces o maquillaje oscuro.</p>
+              <ul>
+                <li>Base negra o gris combinada con rosa, lila o menta</li>
+                <li>Accesorios cute-creepy (ositos, lazos, corazones rotos)</li>
+                <li>Faldas, sudaderas o vestidos en tonos pastel</li>
+                <li>Maquillaje que mezcla dulzura y dramatismo</li>
+                <li>Pelo teñido en pasteles o negro con mechas de color</li>
+                <li>Influencia de internet, kawaii y la escena alternative actual</li>
+              </ul>
+              <p style="margin-top:8px;">No sustituye al trad goth: es otra forma de vivir la estética oscura, más colorida y contemporánea.</p>
+            </div>
+            <div class="style-info-img">
+              <div class="frame">
+                <img src="images/pastel.jpg" alt="Ejemplo Pastel Goth" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="ph" style="display:none;">📷</div>
+              </div>
+              <div class="cap"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OUTFIT - sección propia bien visible -->
+      <div class="section" id="outfit">
+        <h2>Arma tu outfit</h2>
+        <p style="text-align:center; color:#a8a0a0;">
+          Pulsa <strong style="color:#c8c0c0;">[+]</strong> para añadir una prenda a tu look.
+          Pulsa la tarjeta de la derecha para quitarla.
+        </p>
+        <div class="outfit-box">
+          <div class="outfit-col">
+            <div class="items-list" id="items-list">
+              <div style="text-align:center; color:#9a8080; font-size:12px; margin-bottom:8px;">Prendas disponibles</div>
+              <button type="button" class="clothing-btn" data-item="Corsé de terciopelo">+ Corsé de terciopelo</button>
+              <button type="button" class="clothing-btn" data-item="Blusa de encaje negro">+ Blusa de encaje negro</button>
+              <button type="button" class="clothing-btn" data-item="Falda midi de terciopelo">+ Falda midi de terciopelo</button>
+              <button type="button" class="clothing-btn" data-item="Medias de red">+ Medias de red</button>
+              <button type="button" class="clothing-btn" data-item="Botas Dr. Martens">+ Botas Dr. Martens</button>
+              <button type="button" class="clothing-btn" data-item="Capa larga">+ Capa larga</button>
+              <button type="button" class="clothing-btn" data-item="Gargantilla de plata">+ Gargantilla de plata</button>
+              <button type="button" class="clothing-btn" data-item="Guantes de encaje">+ Guantes de encaje</button>
+            </div>
+          </div>
+          <div class="outfit-col">
+            <div class="drop-zone" id="drop-zone">
+              <div style="text-align:center; color:#9a8080; font-size:12px; margin-bottom:8px;">Tu outfit</div>
+              <p id="drop-hint" style="text-align:center; color:#6a5a5a; font-size:12px; margin-top:20px;">Aún vacío — usa los botones +</p>
+              <div id="outfit-items"></div>
+            </div>
+          </div>
+        </div>
+        <div id="outfit-result" style="text-align:center; margin-top:10px; color:#c0b8b8; font-size:13px; min-height:20px;"></div>
+      </div>
+
+      <div class="section" id="galeria">
+        <h2>Galería</h2>
+        <div class="gallery-grid">
+          <div class="row">
+            <div class="cell">
+              <div class="gallery-item" data-full="images/g7.jpg" data-caption="">
+                <img src="images/g7.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="ph" style="display:none;"></div>
+                <div class="cap"></div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="gallery-item" data-full="images/g8.jpg" data-caption="">
+                <img src="images/g8.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="ph" style="display:none;"></div>
+                <div class="cap"></div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="gallery-item" data-full="images/g9.jpg" data-caption="">
+                <img src="images/g9.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="ph" style="display:none;"></div>
+                <div class="cap"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="cell">
+              <div class="gallery-item" data-full="images/g10.jpg" data-caption="">
+                <img src="images/g10.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="ph" style="display:none;"></div>
+                <div class="cap"></div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="gallery-item" data-full="images/g11.jpg" data-caption="">
+                <img src="images/g11.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="ph" style="display:none;"></div>
+                <div class="cap"></div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="gallery-item" data-full="images/g12.jpg" data-caption="">
+                <img src="images/g12.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="ph" style="display:none;"></div>
+                <div class="cap"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-banner" style="background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.8)), url('images/g4.jpg');">
+        <div class="inner">
+          <h3>Música</h3>
+          <p>El corazón de la subcultura</p>
+        </div>
+      </div>
+      <div class="section" id="musica">
+        <h2>Música</h2>
+        <p style="text-align:center; font-size:12px; color:#6a5a5a;">Clic en cada banda para leer más y escuchar un extracto (~30 s)</p>
+        <div class="band-row">
+          <div class="b">
+            <div class="band-card" data-band="bauhaus">
+              <div class="year">1978 –</div>
+              <h4>Bauhaus</h4>
+              <p>Bela Lugosi's Dead</p>
+            </div>
+          </div>
+          <div class="b">
+            <div class="band-card" data-band="siouxsie">
+              <div class="year">1976 –</div>
+              <h4>Siouxsie &amp; the Banshees</h4>
+              <p>Icono de estilo</p>
+            </div>
+          </div>
+          <div class="b">
+            <div class="band-card" data-band="cure">
+              <div class="year">1978 –</div>
+              <h4>The Cure</h4>
+              <p>Trilogía oscura</p>
+            </div>
+          </div>
+        </div>
+        <div class="band-row">
+          <div class="b">
+            <div class="band-card" data-band="joydivision">
+              <div class="year">1976-80</div>
+              <h4>Joy Division</h4>
+              <p>Melancolía post-punk</p>
+            </div>
+          </div>
+          <div class="b">
+            <div class="band-card" data-band="sisters">
+              <div class="year">1980 –</div>
+              <h4>The Sisters of Mercy</h4>
+              <p>Goth rock 80s</p>
+            </div>
+          </div>
+          <div class="b">
+            <div class="band-card" data-band="nostramorte">
+              <div class="year">México</div>
+              <h4>NostraMorte</h4>
+              <p>Gothic metal mexicano</p>
+            </div>
+          </div>
+        </div>
+        <div class="band-row">
+          <div class="b">
+            <div class="band-card" data-band="cramps">
+              <div class="year">1976 –</div>
+              <h4>The Cramps</h4>
+              <p>Psychobilly / horror</p>
+            </div>
+          </div>
+          <div class="b">
+            <div class="band-card" data-band="otras">
+              <div class="year">1990 –</div>
+              <h4>Lacrimosa</h4>
+              <p>Intro / Lacrimosa Theme</p>
+            </div>
+          </div>
+          <div class="b"></div>
+        </div>
+        <div id="band-info">
+          <div class="band-info-row">
+            <div class="band-info-text-col">
+              <h4 id="band-info-title" style="color:#c0b8b8; font-weight:normal; margin-bottom:6px;"></h4>
+              <p id="band-info-text" style="margin:0;"></p>
+            </div>
+            <div class="band-info-audio-col">
+              <div style="font-size:11px; color:#7a6a6a; margin-bottom:6px;">Extracto ~30 s</div>
+              <div class="vinyl-wrap" id="vinyl-wrap" title="Clic para reproducir / pausar">
+                <div class="vinyl-arm"></div>
+                <div class="vinyl" id="vinyl-disc">
+                  <div class="vinyl-grooves"></div>
+                  <div class="vinyl-label" id="vinyl-label">
+                    <div class="vl-fallback" id="vinyl-fallback">PLAY</div>
+                  </div>
+                  <div class="vinyl-spindle"></div>
+                </div>
+              </div>
+              <div class="vinyl-play-hint" id="vinyl-hint">Clic en el vinilo</div>
+              <audio id="band-audio" preload="none"></audio>
+              <p id="band-audio-hint" style="font-size:10px; color:#5a4a4a; margin-top:6px;"></p>
+            </div>
+          </div>
+          <button type="button" class="btn" id="band-info-close" style="margin-top:10px;">Cerrar</button>
+        </div>
+        </div>
+
+      <!-- RESUMEN FINAL -->
+      <div class="section" id="vivir">
+        <h2>Vivir la subcultura</h2>
+        <p>Ser gótico no es solo vestir de negro ni repetir que “se odia el sistema”. La ropa y la estética importan, pero son la superficie de algo más amplio: una forma de mirar el arte, la música, la literatura y la propia sensibilidad.</p>
+        <p>Muchas personas en la subcultura valoran lo melancólico, lo teatral y lo simbólico. Escuchan rock gótico, darkwave o estilos afines; leen, dibujan, van a conciertos o simplemente encuentran en esa estética un espacio donde sentirse auténticos. No hay un examen ni un ranking de “quién es más gótico”.</p>
+        <p>Tampoco es obligatorio odiar el mundo ni vivir aislado. Se puede estudiar, trabajar, tener amigos de otros estilos y seguir formando parte de la escena. Criticar lo que no convence de la sociedad es una cosa; convertir el rechazo en única identidad es otra. La subcultura, en su mejor versión, invita a la expresión y a la comunidad, no al vacío ni a la pose.</p>
+        <p>En resumen: el negro en la ropa puede ser el primer gesto visible, pero vivir siendo parte de ello es sobre todo compartir códigos culturales, música, historia y una manera de habitar las emociones —con respeto hacia uno mismo y hacia los demás.</p>
+        <p style="text-align:center; margin-top:12px; color:#7a6a6a; font-size:12px;">— Fin del fan site —</p>
+      </div>
+    </div>
+    <div class="col-right">
+      <div class="bat-bone">
+        <img src="data:image/jpeg;base64,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" alt="Murciélago">
+        <div class="bone">🦴</div>
+      </div>
+      <div class="side-block">
+        <h3>Bandas</h3>
+        <div class="inner">
+          <a href="#musica" onclick="openBand('bauhaus'); return false;">· Bauhaus</a>
+          <a href="#musica" onclick="openBand('siouxsie'); return false;">· Siouxsie</a>
+          <a href="#musica" onclick="openBand('cure'); return false;">· The Cure</a>
+          <a href="#musica" onclick="openBand('joydivision'); return false;">· Joy Division</a>
+          <a href="#musica" onclick="openBand('sisters'); return false;">· Sisters of Mercy</a>
+          <a href="#musica" onclick="openBand('nostramorte'); return false;">· NostraMorte</a>
+          <a href="#musica" onclick="openBand('cramps'); return false;">· The Cramps</a>
+        </div>
+      </div>
+      <div class="side-block">
+        <h3>Más imágenes</h3>
+        <div class="inner">
+          <div class="side-img side-img-click" data-full="images/g4.jpg" data-caption="" style="cursor:pointer;">
+            <img src="images/g4.jpg" alt="g4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="ph" style="display:none;"></div>
+          </div>
+          <div class="side-img side-img-click" data-full="images/g5.jpg" data-caption="" style="cursor:pointer;">
+            <img src="images/g5.jpg" alt="g5" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="ph" style="display:none;"></div>
+          </div>
+          <div class="side-img side-img-click" data-full="images/g6.jpg" data-caption="" style="cursor:pointer;">
+            <img src="images/g6.jpg" alt="g6" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="ph" style="display:none;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="side-block">
+        <h3>Sobre este sitio</h3>
+        <div class="inner" style="font-size:11px; color:#6a5a5a;">
+          Fan site no oficial.<br>
+          Estilo web años 2000.
+        </div>
+      </div>
+      <div class="bat-bone">
+        <img src="data:image/jpeg;base64,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" alt="Murciélago">
+        <div class="bone">🦴</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="name">Creado por: Estudiante Gótico</div>
+    <p>Fan site de la subcultura gótica — formato portal años 2000</p>
+    <p style="margin-top:4px;">Best viewed with Netscape 4.7 or IE 6 · 800×600</p>
+  </div>
+</div>
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-inner">
+    <button type="button" class="lightbox-close" id="lightbox-close">Cerrar</button>
+    <img id="lightbox-img" src="" alt="">
+    <div id="lightbox-caption" style="color:#7a6a6a; margin-top:6px; font-size:12px;"></div>
+  </div>
+</div>
+
+<script>
+(function() {
+  "use strict";
+
+  // Reloj
+  function updateClock() {
+    var el = document.getElementById('clock');
+    if (el) {
+      el.textContent = new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    }
+  }
+  updateClock();
+  setInterval(updateClock, 1000);
+
+  // Visitas
+  try {
+    var hits = parseInt(localStorage.getItem('gothHits') || '1337', 10) + 1;
+    localStorage.setItem('gothHits', hits);
+    var hc = document.getElementById('hit-count');
+    if (hc) hc.textContent = String(hits).padStart(7, '0');
+  } catch (e) {}
+
+  // Scroll suave
+  document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      var id = this.getAttribute('href');
+      if (id && id.length > 1) {
+        var t = document.querySelector(id);
+        if (t) {
+          e.preventDefault();
+          t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  });
+
+  // ===== ESTILOS GÓTICOS =====
+  window.openStyle = function(key) {
+    document.querySelectorAll('.style-info').forEach(function(el) {
+      el.classList.remove('visible');
+      el.style.display = 'none';
+    });
+    document.querySelectorAll('.style-btn').forEach(function(el) { el.classList.remove('active'); });
+    var info = document.getElementById('info-' + key);
+    var btn = document.getElementById('btn-' + key);
+    if (info) {
+      info.classList.add('visible');
+      info.style.display = 'block';
+      if (btn) btn.classList.add('active');
+      var sec = document.getElementById('vestimenta');
+      if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  document.querySelectorAll('.style-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var key = this.getAttribute('data-style');
+      var info = document.getElementById('info-' + key);
+      if (!info) return;
+      var isOpen = info.style.display === 'block' || info.classList.contains('visible');
+      document.querySelectorAll('.style-info').forEach(function(el) {
+        el.classList.remove('visible');
+        el.style.display = 'none';
+      });
+      document.querySelectorAll('.style-btn').forEach(function(el) { el.classList.remove('active'); });
+      if (!isOpen) {
+        info.classList.add('visible');
+        info.style.display = 'block';
+        this.classList.add('active');
+      }
+    });
+  });
+
+  // ===== TIMELINE =====
+  var timeData = {
+    '1979': 'En 1979 Bauhaus publica Bela Lugosi\'s Dead. La cancion, larga y atmosferica, se considera el punto de partida del rock gotico.',
+    '1981': '1981-82: The Cure publica Pornography. En 1982 abre en Londres el club Batcave, epicentro de los primeros goticos.',
+    '1985': 'A mediados de los 80 la subcultura se expande. Surgen deathrock, darkwave y escenas en varios paises.',
+    '1990': 'Desde los 90 el gotico se diversifica: gothic metal, industrial, cybergoth, romantgoth.'
+  };
+  document.querySelectorAll('.timeline-item[data-time]').forEach(function(item) {
+    item.addEventListener('click', function() {
+      var key = this.getAttribute('data-time');
+      var box = document.getElementById('time-info');
+      var text = document.getElementById('time-info-text');
+      if (text) text.textContent = timeData[key] || '';
+      if (box) box.style.display = 'block';
+    });
+  });
+  var timeClose = document.getElementById('time-info-close');
+  if (timeClose) {
+    timeClose.addEventListener('click', function() {
+      var box = document.getElementById('time-info');
+      if (box) box.style.display = 'none';
+    });
+  }
+
+  // ===== BANDAS =====
+  // Extractos: el usuario coloca los mp3; el script salta al segundo indicado y limita a ~30s
+  var bandData = {
+    bauhaus: {
+      title: 'Bauhaus',
+      text: 'Formada en Northampton (Reino Unido) en 1978. Bela Lugosi\'s Dead (1979) es el himno fundacional del rock gotico. Extracto: "Harry" (The Bela Session).',
+      audio: 'audio-bauhaus.mp3',
+      cover: 'images/cover-bauhaus.jpg',
+      song: 'Harry (The Bela Session)',
+      start: 0,
+      duration: 30
+    },
+    siouxsie: {
+      title: 'Siouxsie and the Banshees',
+      text: 'Desde 1976. Siouxsie Sioux es icono de estilo de la subcultura. Extracto: "Cities in Dust" (desde el segundo 31).',
+      audio: 'audio-siouxsie.mp3',
+      cover: 'images/cover-siouxsie.jpg',
+      song: 'Cities in Dust',
+      start: 31,
+      duration: 30
+    },
+    cure: {
+      title: 'The Cure',
+      text: 'Robert Smith y la trilogia oscura: Seventeen Seconds, Faith y Pornography. Extracto: "Fire in Cairo".',
+      audio: 'audio-cure.mp3',
+      cover: 'images/cover-cure.jpg',
+      song: 'Fire in Cairo',
+      start: 0,
+      duration: 30
+    },
+    joydivision: {
+      title: 'Joy Division',
+      text: '1976-1980 (Manchester). Unknown Pleasures y Closer influyeron en el rock gotico. Extracto: "Day of the Lords" (desde el segundo 33).',
+      audio: 'audio-joydivision.mp3',
+      cover: 'images/cover-joydivision.jpg',
+      song: 'Day of the Lords',
+      start: 33,
+      duration: 30
+    },
+    sisters: {
+      title: 'The Sisters of Mercy',
+      text: 'Desde 1980. Caja de ritmos y voz de Andrew Eldritch. Extracto: "Lucretia My Reflection" (desde el segundo 13).',
+      audio: 'audio-sisters.mp3',
+      cover: 'images/cover-sisters.jpg',
+      song: 'Lucretia My Reflection',
+      start: 13,
+      duration: 30
+    },
+    nostramorte: {
+      title: 'NostraMorte',
+      text: 'Banda mexicana de gothic metal / darkwave. Referente de la escena gotica en Mexico. Extracto: "Requiemdemort" (desde 3:20).',
+      audio: 'audio-nostramorte.mp3',
+      cover: 'images/cover-nostramorte.jpg',
+      song: 'Requiemdemort',
+      start: 200,
+      duration: 30
+    },
+    cramps: {
+      title: 'The Cramps',
+      text: 'Formada en 1976. Psychobilly y horror rock. Lux Interior y Poison Ivy. Extracto: "I Can\'t Hardly Stand It" (desde el segundo 9).',
+      audio: 'audio-cramps.mp3',
+      cover: 'images/cover-cramps.jpg',
+      song: 'I Can\'t Hardly Stand It',
+      start: 9,
+      duration: 30
+    },
+    otras: {
+      title: 'Lacrimosa',
+      text: 'Banda suizo-alemana de metal gotico / darkwave fundada por Tilo Wolff. Estetica romantica y teatral. Extracto: "Intro / Lacrimosa Theme".',
+      audio: 'audio-lacrimosa.mp3',
+      cover: 'images/cover-lacrimosa.jpg',
+      song: 'Intro / Lacrimosa Theme',
+      start: 0,
+      duration: 30
+    }
+  };
+
+  var audioTimer = null;
+
+  function setVinylPlaying(playing) {
+    var wrap = document.getElementById('vinyl-wrap');
+    var disc = document.getElementById('vinyl-disc');
+    var hint = document.getElementById('vinyl-hint');
+    if (wrap) {
+      if (playing) wrap.classList.add('playing');
+      else wrap.classList.remove('playing');
+    }
+    if (disc) {
+      if (playing) disc.classList.add('spinning');
+      else disc.classList.remove('spinning');
+    }
+    if (hint) hint.textContent = playing ? 'Reproduciendo… clic para pausar' : 'Clic en el vinilo';
+  }
+
+  function setVinylCover(coverUrl, songName) {
+    var label = document.getElementById('vinyl-label');
+    if (!label) return;
+    label.innerHTML = '';
+    if (coverUrl) {
+      var img = document.createElement('img');
+      img.src = coverUrl;
+      img.alt = songName || 'Portada';
+      img.onerror = function() {
+        label.innerHTML = '<div class="vl-fallback">PORTADA</div>';
+      };
+      label.appendChild(img);
+    } else {
+      label.innerHTML = '<div class="vl-fallback">PLAY</div>';
+    }
+  }
+
+  function stopBandAudio() {
+    var audio = document.getElementById('band-audio');
+    if (audio) audio.pause();
+    if (audioTimer) {
+      clearInterval(audioTimer);
+      audioTimer = null;
+    }
+    setVinylPlaying(false);
+  }
+
+  window.openBand = function(key) {
+    var data = bandData[key];
+    if (!data) return;
+    var t = document.getElementById('band-info-title');
+    var x = document.getElementById('band-info-text');
+    var box = document.getElementById('band-info');
+    var audio = document.getElementById('band-audio');
+    var hint = document.getElementById('band-audio-hint');
+    var vinylWrap = document.getElementById('vinyl-wrap');
+
+    stopBandAudio();
+
+    if (t) t.textContent = data.title;
+    if (x) x.textContent = data.text;
+    if (box) box.style.display = 'block';
+    setVinylCover(data.cover || '', data.song || data.title);
+
+    if (audio) {
+      if (data.audio) {
+        audio.src = data.audio;
+        var startAt = data.start || 0;
+        var maxDur = data.duration || 30;
+        var endAt = startAt + maxDur;
+
+        function seekAndLimit() {
+          try {
+            if (audio.currentTime < startAt) audio.currentTime = startAt;
+          } catch (e) {}
+        }
+
+        audio.onloadedmetadata = function() { seekAndLimit(); };
+        audio.onplay = function() {
+          seekAndLimit();
+          setVinylPlaying(true);
+          if (audioTimer) clearInterval(audioTimer);
+          audioTimer = setInterval(function() {
+            if (audio.currentTime >= endAt) {
+              audio.pause();
+              try { audio.currentTime = startAt; } catch (e) {}
+              setVinylPlaying(false);
+              if (audioTimer) { clearInterval(audioTimer); audioTimer = null; }
+            }
+          }, 200);
+        };
+        audio.onpause = function() {
+          setVinylPlaying(false);
+          if (audioTimer) { clearInterval(audioTimer); audioTimer = null; }
+        };
+        audio.onended = function() { setVinylPlaying(false); };
+
+        // Clic en el vinilo = play / pause
+        if (vinylWrap) {
+          vinylWrap.onclick = function() {
+            if (audio.paused) {
+              var p = audio.play();
+              if (p && p.catch) p.catch(function() {
+                if (hint) hint.textContent = 'No se pudo reproducir. Revisa el archivo: ' + data.audio;
+              });
+            } else {
+              audio.pause();
+            }
+          };
+        }
+
+        var startLabel = startAt >= 60
+          ? (Math.floor(startAt / 60) + ':' + String(startAt % 60).padStart(2, '0'))
+          : (startAt + 's');
+        if (hint) {
+          hint.textContent = data.song ? (data.song + ' — extracto ~' + maxDur + 's') : '';
+        }
+        setVinylPlaying(false);
+      } else {
+        audio.removeAttribute('src');
+        if (hint) hint.textContent = 'Sin extracto para esta entrada.';
+        if (vinylWrap) vinylWrap.onclick = null;
+        setVinylPlaying(false);
+      }
+    }
+
+    var sec = document.getElementById('musica');
+    if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  document.querySelectorAll('.band-card[data-band]').forEach(function(card) {
+    card.addEventListener('click', function() {
+      openBand(this.getAttribute('data-band'));
+    });
+  });
+
+  var bandClose = document.getElementById('band-info-close');
+  if (bandClose) {
+    bandClose.addEventListener('click', function() {
+      stopBandAudio();
+      var box = document.getElementById('band-info');
+      if (box) box.style.display = 'none';
+    });
+  }
+
+  // ===== WIKIPEDIA =====
+  var loadWiki = document.getElementById('load-wiki');
+  if (loadWiki) {
+    loadWiki.addEventListener('click', function() {
+      var btn = this;
+      btn.disabled = true;
+      btn.textContent = 'Cargando...';
+      var loading = document.getElementById('wiki-loading');
+      var content = document.getElementById('wiki-content');
+      if (loading) loading.style.display = 'block';
+      if (content) content.classList.remove('visible');
+      fetch('https://es.wikipedia.org/api/rest_v1/page/summary/Subcultura_g%C3%B3tica')
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+          document.getElementById('wiki-title').textContent = data.title || 'Subcultura gotica';
+          document.getElementById('wiki-extract').textContent = data.extract || '';
+          var link = document.getElementById('wiki-link');
+          if (link) link.href = (data.content_urls && data.content_urls.desktop && data.content_urls.desktop.page) || 'https://es.wikipedia.org/wiki/Subcultura_g%C3%B3tica';
+          if (data.thumbnail && data.thumbnail.source) {
+            var th = document.getElementById('wiki-thumb');
+            if (th) { th.src = data.thumbnail.source; th.style.display = 'block'; }
+          }
+          if (content) content.classList.add('visible');
+        })
+        .catch(function() {
+          document.getElementById('wiki-title').textContent = 'Error de conexion';
+          document.getElementById('wiki-extract').textContent = 'No se pudo cargar Wikipedia.';
+          if (content) content.classList.add('visible');
+        })
+        .finally(function() {
+          if (loading) loading.style.display = 'none';
+          btn.disabled = false;
+          btn.textContent = 'Cargar resumen de Wikipedia';
+        });
+    });
+  }
+
+  // ===== OUTFIT (solo clics, con imagen) =====
+  var outfitItems = document.getElementById('outfit-items');
+  var dropHint = document.getElementById('drop-hint');
+  var outfitResult = document.getElementById('outfit-result');
+  var selected = [];
+
+  // Cada prenda: nombre, emoji de respaldo e imagen (pon el archivo en la misma carpeta)
+  var prendas = {
+    'Corsé de terciopelo': { emoji: '👗', img: 'images/prenda-corse.jpg' },
+    'Blusa de encaje negro': { emoji: '🖤', img: 'images/prenda-blusa.jpg' },
+    'Falda midi de terciopelo': { emoji: '👘', img: 'images/prenda-falda.jpg' },
+    'Medias de red': { emoji: '🕸️', img: 'images/prenda-medias.jpg' },
+    'Botas Dr. Martens': { emoji: '👢', img: 'images/prenda-botas.jpg' },
+    'Capa larga': { emoji: '🧥', img: 'images/prenda-capa.jpg' },
+    'Gargantilla de plata': { emoji: '📿', img: 'images/prenda-gargantilla.jpg' },
+    'Guantes de encaje': { emoji: '🧤', img: 'images/prenda-guantes.jpg' }
+  };
+
+  function renderOutfit() {
+    if (!outfitItems) return;
+    outfitItems.innerHTML = '';
+    selected.forEach(function(name, index) {
+      var info = prendas[name] || { emoji: '🖤', img: '' };
+      var wrap = document.createElement('button');
+      wrap.type = 'button';
+      wrap.className = 'outfit-piece';
+      wrap.title = 'Clic para quitar';
+
+      var img = document.createElement('img');
+      img.className = 'op-img';
+      img.alt = name;
+      img.src = info.img;
+      img.onerror = function() {
+        this.onerror = null;
+        this.style.display = 'none';
+        if (!wrap.querySelector('.op-ph')) {
+          var ph = document.createElement('div');
+          ph.className = 'op-ph';
+          ph.textContent = info.emoji;
+          ph.style.whiteSpace = 'pre-line';
+          ph.style.fontSize = '14px';
+          wrap.insertBefore(ph, wrap.firstChild);
+        }
+      };
+
+      var label = document.createElement('div');
+      label.className = 'op-label';
+      label.textContent = '− ' + name;
+
+      wrap.appendChild(img);
+      wrap.appendChild(label);
+      wrap.addEventListener('click', function() {
+        selected.splice(index, 1);
+        renderOutfit();
+      });
+      outfitItems.appendChild(wrap);
+    });
+    if (dropHint) dropHint.style.display = selected.length ? 'none' : 'block';
+    if (outfitResult) {
+      var n = selected.length;
+      if (n === 0) outfitResult.textContent = '';
+      else if (n < 3) outfitResult.textContent = 'Outfit basico (' + n + ' prendas). Sigue anadiendo.';
+      else if (n < 5) outfitResult.textContent = 'Buen look (' + n + ' prendas).';
+      else outfitResult.textContent = 'Outfit completo (' + n + ' prendas). Listo.';
+    }
+  }
+
+  document.querySelectorAll('.clothing-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var name = this.getAttribute('data-item');
+      if (name && selected.indexOf(name) === -1) {
+        selected.push(name);
+        renderOutfit();
+      }
+    });
+  });
+
+  // ===== LIGHTBOX =====
+  var lightbox = document.getElementById('lightbox');
+  function openLightbox(src, caption) {
+    var img = document.getElementById('lightbox-img');
+    var cap = document.getElementById('lightbox-caption');
+    if (img) {
+      img.src = src || '';
+      img.style.maxWidth = '95%';
+      img.style.maxHeight = '88vh';
+      img.style.objectFit = 'contain';
+    }
+    if (cap) cap.textContent = caption || '';
+    if (lightbox) lightbox.classList.add('open');
+  }
+
+  document.querySelectorAll('.gallery-item').forEach(function(item) {
+    item.addEventListener('click', function() {
+      openLightbox(item.getAttribute('data-full'), item.getAttribute('data-caption'));
+    });
+  });
+
+  // Imágenes de los costados: clic para ver completas
+  document.querySelectorAll('.side-img-click').forEach(function(item) {
+    item.addEventListener('click', function() {
+      openLightbox(item.getAttribute('data-full'), item.getAttribute('data-caption'));
+    });
+  });
+  var lbClose = document.getElementById('lightbox-close');
+  if (lbClose) lbClose.addEventListener('click', function() {
+    if (lightbox) lightbox.classList.remove('open');
+  });
+  if (lightbox) {
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox) lightbox.classList.remove('open');
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
